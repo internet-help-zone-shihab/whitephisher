@@ -1,9 +1,3 @@
-trap 'printf "\n";stop;exit 1' 2
-deps() {
-command -v php > /dev/null 2>&1 || { echo >&2 "PHP is not installed ! Install it."; exit 1; }
-command -v curl > /dev/null 2>&1 || { echo >&2 "curl is not installed ! Install it."; exit 1; }
-command -v ssh > /dev/null 2>&1 || { echo >&2 "openssh is not installed ! Install it."; exit 1; }
-}
 banner() {
 clear
 printf " \e[31;1m ░██╗░░░░░░░██╗██╗░░██╗██╗████████╗███████╗ \e[0m\n"
