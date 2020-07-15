@@ -79,9 +79,9 @@ CorrectPassword = "shihab"
 
 
 loop = 'true'
-    username = raw_input("\033[1;96m[☆] \x1b[1;97mUSER ID \x1b[1;96m>>>> ")
+    username = raw_input(" \e[34;1m[☆] USER ID >>>> \e[0m\n"
     if (username == CorrectUsername):
-    	password = raw_input("\033[1;96m[☆] \x1b[1;97mPASWORD \x1b[1;96m>>>> ")
+    	password = raw_input(" \e[34;1m[☆] PASSWORD >>>> \e[0m\n"
         if (password == CorrectPassword):
             print "Logged in successfully as " + username
             loop = 'false'
@@ -100,7 +100,7 @@ def login():
 	except (KeyError,IOError):
 		os.system('clear')
 		print logo
-		print 50*"\033[1;96m▪"
+		print 50*" \e[34;1m█\e[0m\n"
 
 banner() {
 clear
