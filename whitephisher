@@ -79,7 +79,6 @@ CorrectPassword = "shihab"
 
 
 loop = 'true'
-    username = raw_input(" \e[34;1m[☆] USER ID >>>> \e[0m\n"
     if (username == CorrectUsername):
     	password = raw_input(" \e[34;1m[☆] PASSWORD >>>> \e[0m\n"
         if (password == CorrectPassword):
