@@ -74,33 +74,6 @@ printf " \e[34;1m•◈•──────────•◈•WHITEDEVIL•�
 printf " \e[34;1m            WELCOME DEAR HACKERS          \e[0m\n"]
 printf " \e[34;1m•◈•──────────•◈•WHITEDEVIL•◈•──────────•◈•\e[0m\n"
 
-CorrectUsername = "internethelpzone"
-CorrectPassword = "shihab"
-
-
-loop = 'true'
-    if (username == CorrectUsername):
-    	password = raw_input(" \e[34;1m[☆] PASSWORD >>>> \e[0m\n"
-        if (password == CorrectPassword):
-            print "Logged in successfully as " + username
-            loop = 'false'
-        else:
-            print "Wrong Password"
-            os.system('xdg-open https://www.youtube.com/channel/UCM4wF_X6IV4SNRumm4N_3IA')
-    else:
-        print "Wrong Username"
-        os.system('xdg-open https://www.youtube.com/channel/UCM4wF_X6IV4SNRumm4N_3IA')
-
-def login():
-	os.system('clear')
-	try:
-		toket = open('login.txt','r')
-		menu() 
-	except (KeyError,IOError):
-		os.system('clear')
-		print logo
-		print 50*" \e[34;1m█\e[0m\n"
-
 banner() {
 clear
 printf " \e[31;1m ░██╗░░░░░░░██╗██╗░░██╗██╗████████╗███████╗ \e[0m\n"
