@@ -9,7 +9,7 @@ user_interrupt(){
         printf "\e[0m\e[1;36m\t CTRL + C Pressed !!\n"
         sleep 2
         printf "\e[0m\n"
-        printf " \e[0m\e[1;42m Thanks for Using This Tool !!\e[0m  \e[1;44m Visit https://github.com/htr-tech for more\e[0m\n"
+        printf " \e[0m\e[1;42m Thanks for Using This Tool !!\e[0m  \e[1;44m Visit https://github.com/internet-help-zone-shihab for more\e[0m\n"
         printf "\e[0m\n"
         exit 1
 }
@@ -37,35 +37,6 @@ fi
 
 }
 
-reqs() {
-
-command -v php > /dev/null 2>&1 || { printf "\n\e[0m\e[96m Packages are not Installed ! type \e[0m\e[93mbash setup\e[0m\n\n"; exit 1; }
-command -v curl > /dev/null 2>&1 || { printf "\n\e[0m\e[96m Packages are not Installed ! type \e[0m\e[93mbash setup\e[0m\n\n"; exit 1; }
-command -v ssh > /dev/null 2>&1 || { printf "\n\e[0m\e[96m Packages are not Installed ! type \e[0m\e[93mbash setup\e[0m\n\n"; exit 1; }
-command -v unzip > /dev/null 2>&1 || { printf "\n\e[0m\e[96m Packages are not Installed ! type \e[0m\e[93mbash setup\e[0m\n\n"; exit 1; }
-
-if [[ -d .htr ]]; then
-printf ""
-else
-printf "\n\e[0m\e[96m Packages are not Found ! type \e[0m\e[93mbash setup\e[0m\n\n"
-exit 1 
-fi
-
-if [[ -d .Modules ]]; then
-printf ""
-else
-printf "\n\e[0m\e[96m Packages are not Found ! type \e[0m\e[93mbash setup\e[0m\n\n"
-exit 1 
-fi
-
-if [[ -d .htr/www ]]; then
-rm -rf .htr/www
-mkdir .htr/www
-else
-mkdir .htr/www
-fi
-
-}
 
 banner() {
 
